@@ -1,0 +1,27 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+::ng-deep .dp-modal-header {
+    background: linear-gradient(
+        to left, #814DFF,#FF83B6
+      );
+
+ }
+
+ ::ng-deep .dp-modal-body {
+    
+    background-image: radial-gradient( rgba(255, 144, 34, .7),rgba(255, 131, 182));
+  }
+
+.ProfileDiv {
+    text-align: center;
+}
+label{
+    display:inline-block;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, .85);
+    padding-left: 5px;
+    padding: 10px;
+    margin-top: 18px;
+    width: 130px;
+
+}

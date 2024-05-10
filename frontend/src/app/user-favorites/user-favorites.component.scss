@@ -1,0 +1,32 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+::ng-deep .dp-modal-header {
+    background: linear-gradient(
+        to left, #814DFF,#FF83B6
+      );
+
+ }
+
+ ::ng-deep .dp-modal-body {
+    
+    //background-color: azure;
+    background-image: radial-gradient( rgba(255, 144, 34, .7),rgba(255, 131, 182));
+  }
+
+.UserFavoritesDiv button {
+    margin-top: 200px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+
+    //background-image: radial-gradient( rgba(255, 144, 34, .7),rgba(255, 131, 182));
+    background-color: rgba(255, 255, 255, .85);
+}
+
+.UserFavoritesDiv button:hover {
+    background-image: linear-gradient( rgb(36, 63, 255),rgb(129, 77, 255));
+    color: white;
+}
+.UserFavoritesDiv {
+    text-align: center;
+}

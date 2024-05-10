@@ -1,0 +1,87 @@
+<div class="LoginDiv">
+<form method ="post" #f="ngForm" (ngSubmit)="createUser(f)" novalidate>
+    
+    <div class="labelHolder">
+        <label>First Name</label>
+        <input type ="text" placeholder="Enter First name" name="firstname" ngModel>
+    </div>
+
+    <div class="labelHolder">
+        <label>Last Name</label>    
+        <input type ="text" placeholder="Enter Last name" name="lastname" ngModel>
+    </div>
+    
+    <div class="labelHolder">
+        <label>Username</label>
+        <input type ="text" placeholder="Enter new username" name="username" ngModel>
+    </div>
+
+    <div class="labelHolder">
+        <label>Password</label>    
+        <input type ="password" placeholder="Enter new password" name="password" ngModel>
+    </div>
+    <div id="accountOptions">
+
+        <button id="cancel" class="firstRow" type="button" (click)="cancel()">
+            Cancel
+        </button>
+        <button id="signUp" class="firstRow" type="submit" (click)="signUpUser()">
+            Sign Up
+        </button>
+        <p>-------- OR --------</p>
+        <button id="login" type="button" (click)="LoginComp()">
+            Login
+        </button>
+
+    </div>
+</form>
+</div>
+<!--
+<form (ngSubmit)="saveData()">
+
+    <div class = "mb-4">
+        <label for="newuser-fullName" class="form-label">
+            Enter Name:
+        </label>
+        <input id = "newuser-fullName"
+        name = "fullName"
+        class="form-control"
+        required
+        [(ngModel)]="newuser.fullName" />
+    </div>
+
+    <div class = "mb-4">
+        <label for="newuser-username" class="form-label">
+            Create Username:
+        </label>
+        <input id = "newuser-username"
+        name = "username"
+        class="form-control"
+        required
+        [(ngModel)]="newuser.username" />
+    </div>
+
+    <div class="mb-4">
+        <label for="newuser-password" class="form-label">
+            Create Password:
+        </label>
+        <input id = "newuser-password"
+        name = "password"
+        class="form-control"
+        required
+        [(ngModel)]="newuser.password" />
+    </div>
+
+    <div id="accountOptions">
+
+        <button type="button" (click)="cancel()">
+            Cancel
+        </button>
+        <button type="submit">
+            Create
+        </button>
+
+    </div>
+
+</form>
+-->

@@ -1,0 +1,53 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+::ng-deep .dp-modal-header {
+    background: linear-gradient(
+        to left, #814DFF,#FF83B6
+      );
+
+ }
+
+ ::ng-deep .dp-modal-body {
+    
+    background-image: radial-gradient( rgba(255, 144, 34, .7),rgba(255, 131, 182));
+    height: 400px;
+  }
+
+.LoginDiv button {
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+.LoginDiv button:hover {
+    background-color: rgba(255, 255, 255, .85);
+    color: black;
+}
+.LoginDiv {
+    text-align: center;
+}
+
+.firstRow {
+    margin-top: 10px;
+    margin-right: 8px;
+}
+p {
+    margin: 0 auto;
+}
+.LoginDiv {
+    text-align: center;
+}
+label{
+    display:inline-block;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, .85);
+    padding-left: 5px;
+    padding: 10px;
+    margin-top: 18px;
+    width: 115px;
+}
+input {
+    padding: 10px;
+}

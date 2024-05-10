@@ -1,0 +1,12 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+/* You can add global styles to this file, and also import other style files */
+body{
+    background: linear-gradient(
+        to right, #243FFF,#814DFF,#FF83B6,#FF9022 
+      );
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

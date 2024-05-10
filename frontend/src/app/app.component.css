@@ -1,0 +1,120 @@
+input, button {
+    display: block;
+    width: 200px
+}
+
+button {
+    padding: 5px;
+}
+button:hover {
+    background-color: aqua;
+}
+table {
+    border: 2px solid black;
+    width: 700px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+thead {
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+h1, h2 {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mainMenu h5 {
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 1));
+    font-family: Impact;
+    font-size: 35px;
+    color: white;
+    vertical-align: middle;
+    padding: 5px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.mainMenu h6 {
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 1));
+    font-family: Impact;
+    font-size: 27px;
+    color: white;
+    vertical-align: middle;
+    padding: 5px;
+    padding-top: 10px;
+    display: inline-block;
+    float: right;
+    margin: 0 auto;
+    margin-right: 12px;
+}
+.mainMenu {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: inline-block;
+    background-image: linear-gradient(to left, #243FFF,#814DFF,#FF83B6,#FF9022 );
+}
+.mainMenuSelect {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 300px;
+    white-space: normal;
+}
+.endItem {
+    text-decoration: none;
+    float: right;
+    color: black;
+
+}
+.mainMenu a, .mainMenu button  {
+    text-decoration: none;
+    color: black;
+    border: none;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 5px;;
+    margin-right: 20px;
+    border-radius: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    background-color: rgba(255, 255, 255, .5);
+}
+.mainMenu a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.mainMenu a:hover, .mainMenu button:hover, .mainMenu h5:hover {
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .8);
+} 
+
+ ::placeholder {
+}
+.mainMenu ::ng-deep .ng-select .ng-placeholder {
+    white-space: normal; /* Wraps text */
+  }
+
+h3 {
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 1));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 20px;
+
+}

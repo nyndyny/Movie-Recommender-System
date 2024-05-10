@@ -1,0 +1,20 @@
+<div class="overviewDiv">
+<div class="movieOverview">
+    <div class="selectDiv" style="width: 300px; height: 35px;">
+            
+        <ng-select style="top:10px; left: 200px;" [(ngModel)]="selectedMovies" placeholder="Search Movies Here">
+            <ng-option class="ng-has-value" *ngFor="let movie of allMovies" 
+            [value]="'Movie Title: ' + '\n' + movie.Title + '\n\n' + 
+            'Description: ' + '\n' + movie.Overview + '\n\n' + 
+            'Language: ' + '\n' + movie.OriginalLanguage + '\n\n' + 
+            'Release Date: ' + '\n' + movie.ReleaseDate + '\n\n' + 
+            'Runtime Minutes: ' + '\n' + movie.RuntimeMinutes">
+            {{movie.Title}}
+            </ng-option>
+        </ng-select>
+    </div>
+    <div>
+        <p style="white-space: pre-wrap; float:left; width:700px;font-size: 25px;">{{selectedMovies}}</p>
+    </div>
+</div>
+</div>

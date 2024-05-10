@@ -1,0 +1,16 @@
+<br><h3 style="margin-left: 60px;width: 92%;margin-bottom: 20px; text-align:center; background-color: rgba(255, 255, 255, .8); border-radius: 4px; padding: 7px;">Select The Genre(s) You Are Interested In Below & Press Get Recommendations</h3>
+
+<button style="position: sticky; top: 10px; float: right;"class="btn btn-primary" (click)="fillGenres()">Get Recommendations</button>
+<button class="backBtn" type="button" (click)="backToMainPage()">Back to Main Page</button>
+
+<div style="margin-left: 70px;" class="container">
+  <div class="row">
+    <div (click)="genreSelected(i)" *ngFor="let item of genresList; let i = index" id="genreDiv-{{i}}"
+      class="col genre">
+      <img src={{genresUrls[i]}} width="150" height="150">
+      <a style="display: block;">{{item}}</a>
+    </div>
+</div>
+<div class="ring" *ngIf="loading">Loading</div>
+
+<!-- (change)="fillGenres()" at line 10-->

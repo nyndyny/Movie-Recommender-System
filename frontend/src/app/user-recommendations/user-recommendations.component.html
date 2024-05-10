@@ -1,0 +1,25 @@
+<div>
+    <h2>Movie Title:<br></h2>
+        <div style="display: inline-flex; float: right;">
+            
+            <!--<button *ngIf="isLoggedIn" (click)="addToFavorites(movie)"class="btn btn-success gold">
+                <img src="../../assets/favorite_img.png" width="40" height="40" style="background-color: transparent;">
+                Add to Favorites</button>-->
+            <button *ngIf="isSignedIn()" (click)="likeMovie(movie)"class="btn btn-success">
+                <img src="../../assets/like_button_2.png" width="40" height="40" style="background-color: transparent;">
+                Like</button>
+            <button *ngIf="isSignedIn()" (click)="dislikeMovie(movie)"  class="btn btn-danger">
+                <img src="../../assets/dislike_button.png" width="40" height="40" style="background-color: transparent;">
+
+                Dislike</button><br>
+        </div>
+            <h1 class="title-header">{{movie.Title}}</h1>
+            <br><h2>Description:<br></h2>
+            <h3 class="desc"> {{movie.Overview}}</h3>
+            <br><h2>Language:<br> </h2>
+            <h3 class="lang">{{movie.OriginalLanguage}}</h3>
+            <br><h2>Release Date:<br></h2>
+            <h3 class="release"> {{movie.ReleaseDate}}</h3>
+            <br><h2>Runtime Minutes:<br> </h2>
+            <h3 class="runtime">{{movie.RuntimeMinutes}}</h3>
+    </div>       

@@ -1,0 +1,74 @@
+<div class="UserFavoritesDiv">
+
+    <h5>
+        Select/Search Your 10 Favorite Movies Below
+    </h5>
+                <ng-select 
+                    class="col1Select"
+                    [items]="allMovies"
+                    bindLabel="Title"
+                    [(ngModel)]="favoriteMovies" 
+                    (ngModelChange)="movieSelected()"
+                    [multiple]="true"
+                    placeholder="Search Movies Here"
+                    [maxSelectedItems]="10" 
+                    [closeOnSelect]="false"
+                >
+                </ng-select>
+                <button id="saveFavs" (click)="saveFavorites()">Save Favorites</button>
+                <!--
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div *ngFor="let movie of column1Movies" class="col1Movies">
+                    <a>
+                        <img src="movie.PosterPath" alt="" height="53" width="35">
+                        {{movie.Title}}
+                    </a>
+    
+                </div>
+            </div>
+            <div class="col">
+                <div *ngFor="let movie of column2Movies" class="col1Movies">
+                    <a>
+                        <img src="movie.PosterPath" alt="" height="53" width="35">
+                        {{movie.Title}}
+                    </a>
+    
+                </div>
+            </div>
+            <div class="col">
+                <div *ngFor="let movie of column3Movies" class="col1Movies">
+                    <a>
+                        <img src="movie.PosterPath" alt="" height="53" width="35">
+                        {{movie.Title}}
+                    </a>
+    
+                </div>
+            </div>
+            <div class="col">
+                <div *ngFor="let movie of column4Movies" class="col1Movies">
+                    <a>
+                        <img src="movie.PosterPath" alt="" height="53" width="35">
+                        {{movie.Title}}
+                    </a>
+    
+                </div>
+
+            </div>
+            <div class="col">
+                <div *ngFor="let movie of column5Movies" class="col1Movies">
+                    <a>
+                        <img src="movie.PosterPath" alt="" height="53" width="35">
+                        {{movie.Title}}
+                    </a>
+    
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+-->
+</div>

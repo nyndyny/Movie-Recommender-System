@@ -1,0 +1,14 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+::ng-deep .dp-modal-header {
+    background: linear-gradient(
+        to left, #814DFF,#FF83B6
+      );
+
+ }
+
+ ::ng-deep .dp-modal-body {
+    
+    background-image: radial-gradient( rgba(255, 144, 34, .7),rgba(255, 131, 182));
+    min-height: 400px;
+  }

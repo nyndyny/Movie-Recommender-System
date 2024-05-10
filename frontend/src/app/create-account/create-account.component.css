@@ -1,0 +1,39 @@
+input{
+    display: block;
+    width: 180px;
+    padding: 10px;
+    text-align: left;
+    padding-right: 40px;
+}
+
+button {
+    padding: 8px;
+}
+button:hover {
+    background-color:#FF9022;
+}
+
+#accountOptions {
+    
+    padding: 30px;
+    padding-left:58px;
+
+}
+
+/*
+.mb-4 {
+
+    font-family: Helvetica;
+    padding: 10px;
+    padding-right: 10px;
+    right: 100px;
+    
+}
+
+#accountOptions {
+    
+    padding: 10px;
+    padding-left:80px;
+
+}
+*/

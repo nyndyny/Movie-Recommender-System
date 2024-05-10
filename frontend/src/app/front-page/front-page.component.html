@@ -1,0 +1,26 @@
+
+<div class="container mt-4 background">
+  <div class="row justify-content-center">
+    <div style="font-size: 30px; text-align: center;">Looking For a Movie to Watch? Pick One Below</div><br>
+    <div (click)="openRandomRecommendations()" class="col-sm-3 d-flex flex-column survey" height="350">
+      <br><div style="font-size: 25px; text-align: center;">Option 1</div><br>
+      <img src="../../assets/dice.jpg" alt="random dice" class="rounded" height="150"><br>
+      <div style="font-size: 20px; text-align: center;">You will receive recommendations for three randomly selected movies from a diverse collection.</div><br>
+      <a routerLink="/other_page" class="btn btn-info" style="font-size: 20px; color:white; filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 1)); background: linear-gradient(to right, #814DFF,#FF83B6);">Take A Chance</a>
+
+    </div>
+    <div routerLink="/quiz"  class="col-sm-3 d-flex flex-column survey">
+      <br><div style="font-size: 25px; text-align: center;">Option 2</div><br>
+      <img src="../../assets/search.jpg" alt="search icon" class="rounded" height="150"><br>
+      <div style="font-size: 20px; text-align: center;">Answer a few questions tailored to your preferences and explore personalized movie recommendations.</div><br>
+      <a class="btn btn-info" style="font-size: 20px; color:white; filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 1)); background: linear-gradient(to right, #814DFF,#FF83B6);">Find Your Fate</a>
+    </div>
+    <div routerLink="/genre-page" class="col-sm-3 d-flex flex-column survey">
+      <br><div style="font-size: 25px; text-align: center;">Option 3</div><br>
+      <img src="../../assets/genre.jpg" alt="genre" class="rounded" height="150"><br>
+      <div style="font-size: 20px; text-align: center;">Select your favorite genres and get personalized recommendations for a cinematic journey.</div><br>
+      <a  class="btn btn-info" style="font-size: 20px; color:white; filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 1)); background: linear-gradient(to right, #814DFF,#FF83B6);">Choose By Genre</a>
+
+  </div>
+</div>
+

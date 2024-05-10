@@ -1,0 +1,44 @@
+<nav class="mainMenu">
+  <h5 routerLink="/">CINEMA FUSION</h5>
+
+  <a *ngIf="isSignedIn()" (click)="openProfile()">Profile</a>
+  <a *ngIf="isSignedIn()" (click)="openUserFavorites()">Favorites</a>
+  <a id="searchMovieButton" (click)="openSearch()">Search Movie Info</a>
+<!-- 
+  <ng-select 
+    class="mainMenuSelect"
+    [items]="allMovies"
+    bindLabel="Title"
+    [(ngModel)]="selectedMovie" 
+    (ngModelChange)="movieSelected()"
+    placeholder="Search Movies Here" 
+   >
+  </ng-select>
+--> 
+  <a class="endItem" *ngIf="isSignedIn()" (click)="SignOut()">Sign Out</a>
+  <h6 *ngIf="isSignedIn()">Welcome, {{name}}</h6>
+  <a class="endItem" *ngIf="!isSignedIn()" id="userAccountButton" (click)="openUserAccount()">
+       
+    Login/Create Account 
+  </a>
+
+</nav>
+  <h3>Hello there! Today is {{ currentDate }}, Welcome to CinemaFusion. </h3>
+  <router-outlet></router-outlet>
+<!--
+<h1>Welcome To Cinema Fusion Movie Site, ADMIN
+<br>Click below to add and parse movies
+</h1>
+<input (change)="addAllMovies()" type="file" id="fileInput">
+<button (click)="addAllMovies()"> ADD 1 Movie from file</button>
+<button (click)="getRandomMovie()">GET RANDOM MOVIE (check console)</button>
+<h2>ADD MOVIES BELOW</h2>
+<form method="post" #f="ngForm" (ngSubmit)="addMovie(f)" novalidate>
+  <input type="text" placeholder="Movie File Here" name="moviefile" ngModel>
+  
+  <button type="submit">
+    ADD MOVIE
+  </button>
+</form>-->
+
+ 

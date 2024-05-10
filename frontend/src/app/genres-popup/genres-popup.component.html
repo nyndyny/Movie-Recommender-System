@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col movie" *ngFor="let movie of genres; let i = index">
+        <br><h2>Movie Title:</h2>
+        <div style="display: inline-flex; float: right;">
+            <button *ngIf="isSignedIn()" (click)="likeMovie(movie)"class="btn btn-success">
+                <img src="../../assets/like_button_2.png" width="40" height="40" style="background-color: transparent;">
+                Like</button>
+            <button *ngIf="isSignedIn()" (click)="dislikeMovie(movie)"  class="btn btn-danger">
+                <img src="../../assets/dislike_button.png" width="40" height="40" style="background-color: transparent;">
+
+                Dislike</button>
+        </div>
+            <h1 class="title-header" style="font-family:Impact;">{{movie.Title}}</h1>
+            <br><h2>Description:<br></h2>
+            <h3 class="desc"> {{movie.Overview}}</h3>
+            <br><h2>Language:<br> </h2>
+            <h3 class="lang">{{movie.OriginalLanguage}}</h3>
+            <br><h2>Release Date:<br></h2>
+            <h3 class="release"> {{movie.ReleaseDate}}</h3>
+            <br><h2>Runtime Minutes:<br> </h2>
+            <h3 class="runtime">{{movie.RuntimeMinutes}}</h3>
+            
+        </div>
+
+    </div>
+
+</div>

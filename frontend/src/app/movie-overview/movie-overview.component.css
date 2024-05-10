@@ -1,0 +1,15 @@
+.selectDiv {
+
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 1));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+    font-size:20px;
+    float:right;
+    border-color:black;
+}
+.movieOverview {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+
+}

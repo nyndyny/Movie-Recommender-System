@@ -1,0 +1,29 @@
+.genre {
+    display: block;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 4px;
+    text-align: center;
+    padding: 0;
+    margin: 7px;
+    padding: 8px;
+    margin-right: 50px;
+}
+
+.genre:hover, .genre:focus {
+    background-color: rgba(255, 255, 255, .8);
+    cursor: pointer;
+    outline: none;
+
+}
+.genre img {
+    border-radius: 4px;
+}
+.genre a {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+    font-size: 20px;
+}
+.row {
+    width: fit-content;
+}

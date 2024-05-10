@@ -1,0 +1,54 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+::ng-deep .dp-modal-header {
+    background: linear-gradient(
+        to left, #814DFF,#FF83B6
+      );
+
+ }
+
+ ::ng-deep .dp-modal-body {
+    
+    background-image: radial-gradient( rgba(255, 144, 34, .7),rgba(255, 131, 182));
+    
+  }
+
+  .movie {
+    background-color: rgba(255, 255, 255, .5);
+    width: fit-content;
+    padding: 7px;
+  }
+  .movie:hover {
+    background-color: rgba(255, 255, 255, .8);;
+    cursor: pointer;
+  }
+  .title-header {
+    
+    font-family: Impact;
+  }
+  .movie h3 {
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 4px;
+
+
+  }
+  
+  .movie h2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .title {
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 26px;
+    font-weight: 500;
+    padding: 5px;
+    
+  }
+
+  .desc {
+    border-radius: 4px;
+
+  }
